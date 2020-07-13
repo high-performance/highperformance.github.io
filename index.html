@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>High Performance - O Funcional que funciona</title>
+
+    <!-- FavIcon -->
+
+    <link rel="icon" href="images/favicon.ico" />
+
+    <!-- Fim FavIcon -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+
+    <!-- Scripts -->
+    <script src="./scripts/video.js"></script>
+  </head>
+  <body>
+    <!-- Principal -->
+    <div id="main">
+      <!-- Menu -->
+      <div class="menu">
+        <nav>
+          <input type="checkbox" id="menu" />
+          <label for="menu">
+            <img src="./images/open-menu.svg" class="menu-open" alt="menu" />
+            <img src="./images/close.svg" class="menu-close" alt="close-menu" />
+          </label>
+          <h1 class="logo">
+            <img id="logo-img" src="./images/logo.svg" alt="" />
+          </h1>
+          <ul id="teste">
+            <li><a href="#main">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#works">Trabalhos</a></li>
+            <li><a href="#contact">Contatos</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Fim Menu -->
+      <div id="main-text">
+        <h1 id="typewriter">O FUNCIONAL QUE FUNCIONA!</h1>
+      </div>
+      <video autoplay muted loop id="video-background">
+        <source src="./images/backgroud.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+    </div>
+    <!-- Fim Principal -->
+
+    <!-- About -->
+    <div id="about">
+      <img src="./images/Pilates-amico.svg" alt="" />
+      <p>
+        Criada em 2020, a High Performance é uma academia com treinos
+        especificos para diferentes pessoas de diferentes esportes ou objetivo.
+        Contando com dois profissionais de alta qualidade, e que sempre buscam
+        melhorar o seu conhecimento, para melhor atende-los.
+      </p>
+    </div>
+    <!-- Fim About -->
+
+    <!-- Works -->
+    <div id="works">
+      <span>VANTAGENS DOS NOSSOS TREINOS</span>
+      <div>
+        <li>
+          <img src="./images/gym.svg" alt="" />
+          <p>
+            Acompanhamento de um <br />
+            profissional a todo momento
+          </p>
+        </li>
+
+        <li>
+          <img src="./images/exercise.svg" alt="" />
+          <p>
+            Treinos periodizados e <br />
+            pensado individualmente
+          </p>
+        </li>
+
+        <li>
+          <img src="./images/training.svg" alt="" />
+          <p>
+            Parcerias que <br />
+            garantem descontos
+          </p>
+        </li>
+      </div>
+    </div>
+    <!-- Fim Works -->
+
+    <!-- Contact -->
+    <div id="contact">
+      <span>ENTRE EM CONTATO</span>
+      <form action="">
+        <input type="text" name="name" placeholder="Nome" />
+        <input type="number" name="number" placeholder="(00)00000-0000" />
+        <input type="button" value="Enviar" />
+      </form>
+    </div>
+    <!-- Fim Contact -->
+
+    <!-- Footer -->
+    <footer>
+      <div id="footer">
+        <span>Copyrights 2020 © High Performance</span>
+        <img src="./images/instagram.svg" alt="Instagram" />
+      </div>
+    </footer>
+    <!-- Fim Footer -->
+  </body>
+
+  <!-- Type Writer -->
+  <script>
+    function typeWriter(elemento) {
+      const textoArray = elemento.innerHTML.split("");
+      elemento.innerHTML = "";
+      for (let i = 0; i < textoArray.length; i++) {
+        setTimeout(() => (elemento.innerHTML += textoArray[i]), 150 * i);
+      }
+    }
+
+    const titulo = document.querySelector("#typewriter");
+    typeWriter(titulo);
+  </script>
+</html>

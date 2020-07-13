@@ -1,0 +1,182 @@
+@media (max-width: 996px) {
+  /* Menu */
+
+  .menu {
+    max-width: 100%;
+    width: 100%;
+    height: 160px;
+  }
+
+  /* Fim Menu */
+
+  /* Logo */
+
+  #logo-img {
+    z-index: 99999;
+    width: 25%;
+    margin-top: -20px;
+    position: fixed;
+  }
+
+  .logo {
+    font-size: 28px;
+    color: #000;
+    z-index: 9999;
+    position: absolute;
+    margin-left: 5%;
+    width: 250px;
+    float: left;
+    line-height: 50px;
+  }
+
+  /* Fim Logo */
+
+  /* Typewrite */
+
+  #typewriter {
+    font-size: 10vh;
+    text-align: center;
+    z-index: 999;
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+
+  /* Fim typewrite */
+
+  /* Menu */
+  label .menu-open {
+    display: block;
+  }
+
+  .menu > nav {
+    z-index: 99999;
+  }
+
+  .menu label {
+    position: fixed;
+    float: right;
+    width: 100%;
+    top: 25px;
+  }
+
+  .menu > nav ul {
+    text-align: center;
+    position: fixed;
+    width: 75%;
+    height: 100vh;
+    background: #ffffff;
+    padding-top: 15%;
+    left: -100%;
+    transition: 0.5s;
+    z-index: 999999;
+  }
+  .menu > nav ul li {
+    display: block;
+    line-height: 55px;
+    font-weight: bold;
+  }
+  .menu > nav ul li a {
+    font-size: 20px;
+    margin-left: 0;
+    color: black;
+  }
+
+  #menu:checked ~ ul {
+    left: 0;
+  }
+  #menu:checked ~ label .menu-open {
+    display: none;
+  }
+
+  #menu:checked ~ label .menu-close {
+    display: block;
+  }
+  /* Fim Menu */
+
+  /* About */
+
+  #about {
+    display: grid;
+    width: 100%;
+    padding: 5px;
+  }
+
+  #about img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #about p {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color: #f8f8ff;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+  }
+
+  /* Fim About */
+
+  /* Works */
+
+  #works {
+    height: auto;
+    padding: 5px;
+    padding-bottom: 50px;
+  }
+
+  #works div {
+    display: grid;
+  }
+
+  #works span {
+    font-size: 30px;
+  }
+
+  #works div > li {
+    width: 100%;
+  }
+  #works div > li > p {
+    font-size: 20px;
+  }
+  /* Contact */
+  #contact {
+    height: auto;
+    padding: 5px;
+    padding-bottom: 30px;
+  }
+
+  #contact span {
+    font-size: 30px;
+  }
+
+  #contact input {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 4px;
+    margin-top: 4px;
+  }
+
+  #contact input[type="button"] {
+    margin-top: 10px;
+  }
+
+  /* Fim Contact */
+
+  /* Footer */
+
+  footer div {
+    padding: 5px;
+  }
+
+  #footer > img {
+    width: 20px;
+    transform: translate(5px, 5px);
+  }
+
+  /* Fim Footer */
+}
